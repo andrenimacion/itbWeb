@@ -1,0 +1,12 @@
+#bannerHov{
+  height: 400px;
+  background-image: url('../../assets/img/graduacion.jpg');
+  background-size: 100% auto;
+  background-position-y: -200px;
+  background-repeat: no-repeat;
+}
+
+nav {
+  color: gray;
+  background: whitesmoke;
+}

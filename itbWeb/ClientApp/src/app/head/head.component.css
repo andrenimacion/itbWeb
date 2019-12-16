@@ -1,0 +1,148 @@
+#miniNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#miNav {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  transition: ease all 0.5s;
+}
+
+@media only screen and (max-width: 950px){
+  #miNav {
+    justify-content: flex-end;
+  }
+  #linkHF {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #contLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #miniNav {
+    flex-direction: column;
+  }
+  #miNav {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  #linkHF {
+    margin-right: 0;
+  }
+}
+
+
+#miNav:hover {
+    transition: ease all 0.5s;
+    color: orangered;
+}
+#imgLogo{
+    width: 100%;
+    height: auto;
+}
+
+.linkHR {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  cursor: pointer;
+}
+
+.color {
+  width: 25%;
+  height: 8px;
+}
+
+#colors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#azul {
+  background-color: #0617AC;
+}
+#verde {
+  background-color: green;
+}
+#amarillo {
+  background-color: orange;
+}
+#naranja {
+  background-color: orangered;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+
+}
+.material-icons {
+  color: gray;
+}
+
+
+#contLogo {
+  width: 225px;
+  /*background-color: red;*/
+  display: flex;
+  justify-content: flex-start;
+  padding:15px;
+}
+
+
+#email {
+  border: none;
+  border-bottom: solid 0.5px gray;
+  border-radius: 0px;
+}
+
+#password {
+  border: none;
+  border-bottom: solid 0.5px gray;
+  border-radius: 0px;
+}
+
+#usuario {
+  border: none;
+  border-bottom: solid 0.5px gray;
+  border-radius: 0px;
+}
+
+#mHeader{
+  background-color: blue;
+  color: white;
+}
+
+.fMail{
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+
+}
+
+
+#eye {
+  cursor: pointer;
+  transition: ease all 0.5s;
+}
+
+
+#eye:hover{
+  transition: ease all 0.5s;
+  color: blue;
+}
+

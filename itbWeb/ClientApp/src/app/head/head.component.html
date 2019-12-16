@@ -1,0 +1,96 @@
+<section class="cotainer-fluid" id="colors">
+  <div class="color" id="azul"></div>
+  <div class="color" id="verde"></div>
+  <div class="color" id="amarillo"></div>
+  <div class="color" id="naranja"></div>
+</section>
+<section class="container-fluid p-3 text-right" id="miniNav">
+  <div id="contLogo">
+    <img id="imgLogo" src="../../assets/img/logo.png" >
+  </div>
+  <div id="miNav" >
+    <div class="linkHR" id="linkHF" data-toggle="modal" data-target="#REGISTRO">
+      <i class="material-icons">person_add</i>SignIn
+    </div>
+    <div class="linkHR ">
+      <i class="material-icons">person</i>LogIn
+    </div>
+  </div>
+</section>
+<!-- Modal REGISTRO-->
+<div class="modal fade" id="REGISTRO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" id="mHeader">
+        <h5 class="modal-title" id="exampleModalLabel">
+          <i class="material-icons" style="color: white;">person_add</i>¡Registrate!
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color: white;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form (ngSubmit)="registrar( r )"
+          #r="ngForm">
+      <div class="form-group">
+
+        <label for="exampleInputEmail1" class="fMail">
+          <i class="material-icons" style="color: blue;">
+            mail
+          </i>Email *
+        </label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               aria-describedby="emailHelp"
+               [(ngModel)]='signIn.email'
+               name="email"
+               required>
+        <small id="emailHelp" class="form-text text-muted">Ingresa un dirección de correo electrónico.</small>
+      </div>
+      <div class="form-group">
+
+        <label for="exampleInputEmail1" class="fMail">
+          <i class="material-icons" style="color: blue;">
+            account_box
+          </i>Nombre/Usuario *
+        </label>
+        <input type="text"
+               class="form-control"
+               id="usuario"
+               aria-describedby="nombrelHelp"
+               [(ngModel)]='signIn.usuario'
+               name="usuario"
+               required>
+        <small id="nombreHelp" class="form-text text-muted">Ingresa tu nombre y apellido.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="fMail">
+          <i class="material-icons" style="color: blue;">
+            lock
+          </i>Ingresa una contraseña *
+        </label>
+        <input [type]="passwordType"
+               class="form-control"
+               id="password"
+               [(ngModel)]='signIn.password'
+               name="password"
+               required>
+        <small id="passHelp" class="form-text text-muted">
+          <i class="material-icons" id="eye" item-end (click)="showpass()">
+            remove_red_eye
+          </i>
+          <i class="material-icons" *ngIf="flase" (click)="hidePass()">
+            visibility_off
+          </i>
+        </small>
+      </div>
+     
+          <button type="submit" class="btn btn-primary">Enviar Datos</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL FIN -->

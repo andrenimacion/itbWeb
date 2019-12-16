@@ -1,0 +1,244 @@
+#bodyComp{
+  border: solid 0.5px gray;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+#carreras {
+  width: 45%;
+  height: auto;
+  
+  display: flex;
+  justify-content: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 965px){
+  #carreras {
+    width: 100%;
+  }
+  #bodyComp{
+      width: 100%;
+  }
+}
+
+.carrerasB {
+  width: 160px;
+  height: 140px;
+  background-color: rgba(14, 2, 0, 0.45);
+  transition: ease all 1s;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .carrerasB:hover {
+    transition: ease all 1s;
+    opacity: 0;
+  }
+
+.carreras {
+  width: 150px;
+  height: 140px;
+  border: solid 1px gray;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease all 1s;
+}
+
+  
+#info {
+  width: 40%;
+  height: auto;
+  border: solid 0.5px gray;
+  display: flex;
+  flex-direction: column;
+}
+
+#subsucribe{
+  width: 100%;
+  height: auto;
+  background: whitesmoke;
+}
+
+#titleCarreras {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28pt;
+}
+/*carreras INICIO*/
+#tSupEnfermeria {
+  background-image: url('../../assets/img/enfermeria.jpg');
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+}
+
+  #tSupEnfermeria:hover {
+    transition: ease all 1s;
+    background-size: 130% 110%;
+    background-position: -10px -10px ;
+  }
+
+#tSupPodologia {
+  background-image: url('../../assets/img/la-importancia-de-higiene-y-esterilizacion-en-clinicas-de-podologia_flowww.png');
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+}
+
+#tSupPodologia:hover {
+  transition: ease all 1s;
+  background-size: 130% 110%;
+  background-position: -10px -10px;
+}
+#atAdultoMayor {
+  background-image: url('../../assets/img/gerontologia.jpeg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+  #atAdultoMayor:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -10px -10px;
+  }
+
+#rebFisica {
+  background-image: url('../../assets/img/rbFisica.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+  background-position: -50px 0;
+}
+
+  #rebFisica:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -60px -10px;
+  }
+
+
+#mantBiomed {
+  background-image: url('../../assets/img/mantEquipos.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+  background-position: -50px 0;
+}
+
+  #mantBiomed:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -60px -10px;
+  }
+
+
+#tricol {
+  background-image: url('../../assets/img/tricologia.jpeg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+  #tricol:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -10px -10px;
+  }
+
+#contabilidad {
+  background-image: url('../../assets/img/cotabilidad.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+  #contabilidad:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -10px -10px;
+  }
+
+#admEmp {
+  background-image: url('../../assets/img/administracionEmpresas.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+#admEmp {
+  transition: ease all 1s;
+  background-size: 150% 110%;
+  background-position: -10px -10px;
+}
+
+#desarrolloSoft {
+  background-image: url('../../assets/img/desSoft.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+#desarrolloSoft:hover {
+  transition: ease all 1s;
+  background-size: 150% 110%;
+  background-position: -10px -10px;
+}
+
+#turismo {
+  background-image: url('../../assets/img/turismo.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+  #turismo:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -10px -10px;
+  }
+
+#transporte {
+  background-image: url('../../assets/img/transporte.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+  #transporte:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -10px -10px;
+  }
+
+#transporte {
+  background-image: url('../../assets/img/coduccion.jpg');
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+
+  #transporte:hover {
+    transition: ease all 1s;
+    background-size: 150% 110%;
+    background-position: -10px -10px;
+  }
+
+.smallest {
+  font-size: 9pt;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1089px) {
+  #info {
+    display: none;
+  }
+  #carreras {
+    width: 100%;
+    justify-content: stretch;
+    justify-content: center;
+  }
+}
+
+/*carreras FIN*/
