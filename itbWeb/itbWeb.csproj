@@ -25,10 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\app.route.ts" />
     <None Remove="ClientApp\src\app\models\log.models.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\app.route.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\log.models.ts" />
   </ItemGroup>
 

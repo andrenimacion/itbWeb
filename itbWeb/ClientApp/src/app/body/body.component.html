@@ -15,73 +15,73 @@
   <!-- carreras INICIO -->
 
   <section id="carreras">
-    <div class="carreras" id="tSupEnfermeria" data-toggle="modal" data-target="#exampleModal">
-      <div class="carrerasB" (click)="changeRun()">
+    <div class="carreras" id="tSupEnfermeria" data-toggle="modal" data-target="#exampleModal" routerLinkActive="Active">
+      <div class="carrerasB" [routerLink]="['tsEnfermeria']">
         <img src="../../assets/ico-carreras/ico-enf.png" width="50" />
         <p class="smallest mt-2">Tecnologia Superior <br /> en Enfermería</p>
       </div>
     </div>
-    <div class="carreras" id="tSupPodologia">
-      <div class="carrerasB">
+    <div class="carreras" id="tSupPodologia" routerLinkActive="Active">
+      <div class="carrerasB" [routerLink]="['tsPodologia']">
         <img src="../../assets/ico-carreras/ico-pie.png" width="50" />
         <p class="smallest mt-2">Tecnologia Superior <br /> en Podología</p>
       </div>
     </div>
-    <div class="carreras" id="atAdultoMayor">
-      <div class="carrerasB">
+    <div class="carreras" id="atAdultoMayor" routerLinkActive="Active">
+      <div class="carrerasB" [routerLink]="['tsGerontologia']">
         <img src="../../assets/ico-carreras/ico-gerontologia.png" width="50" />
         <p class="smallest mt-2">Tecnologia Superior <br /> en Atención Integral para<br />Adultos Mayores</p>
       </div>
     </div>
-    <div class="carreras" id="rebFisica">
-      <div class="carrerasB">
+    <div class="carreras" id="rebFisica" routerLinkActive="Active">
+      <div class="carrerasB" [routerLink]="['tsRebFisica']">
         <img src="../../assets/ico-carreras/ico-rebFisica.png" width="50" />
         <p class="smallest mt-2">Tecnologia Superior <br /> en Rehabilitación Física</p>
       </div>
     </div>
-    <div class="carreras" id="mantBiomed">
-      <div class="carrerasB">
+    <div class="carreras" id="mantBiomed" routerLinkActive="Active">
+      <div class="carrerasB" [routerLink]="['tsEquiposBiomedicos']">
         <img src="../../assets/ico-carreras/ico-mantBiomed.png" width="50" />
         <p class="smallest">Tecnologia Superior <br /> en Mantenimiento de equipos Biomédicos</p>
       </div>
     </div>
-    <div class="carreras" id="tricol">
+    <div class="carreras" id="tricol" routerLinkActive="Active">
       <div class="carrerasB">
         <img src="../../assets/ico-carreras/ico-tricologia.png" width="50" />
         <p class="smallest">Tecnologia Superior <br /> en Tricología y Cosmiatría</p>
       </div>
     </div>
-    <div class="carreras" id="contabilidad">
+    <div class="carreras" id="contabilidad" routerLinkActive="Active">
       <div class="carrerasB">
         <img src="../../assets/ico-carreras/ico-contabilidad.png" width="50" />
         <p class="smallest">Tecnologia Superior <br /> en Contabilidad</p>
       </div>
     </div>
-    <div class="carreras" id="admEmp">
+    <div class="carreras" id="admEmp" routerLinkActive="Active">
       <div class="carrerasB">
         <img src="../../assets/ico-carreras/ico-adminisracion.png" width="50" />
         <p class="smallest">Tecnologia Superior <br /> en Administración de Empresas</p>
       </div>
     </div>
-    <div class="carreras" id="desarrolloSoft">
+    <div class="carreras" id="desarrolloSoft" routerLinkActive="Active">
       <div class="carrerasB">
         <img src="../../assets/ico-carreras/ico-des.png" width="50" />
         <p class="smallest mt-2">Tecnología <br /> en Administración de Empresas</p>
       </div>
     </div>
-    <div class="carreras" id="turismo">
-      <div class="carrerasB">
+    <div class="carreras" id="turismo" routerLinkActive="Active">
+      <div class="carrerasB" [routerLink]="['tsTurismo']">
         <img src="../../assets/ico-carreras/ico-turismo.png" width="50" />
         <p class="smallest mt-2">Tecnología en Turismo</p>
       </div>
     </div>
-    <div class="carreras" id="transporte">
+    <div class="carreras" id="transporte" routerLinkActive="Active">
       <div class="carrerasB">
         <img src="../../assets/ico-carreras/ico-bus.png" width="50" />
         <p class="smallest">Tecnología Superior en Planificación y Gestión de transporte</p>
       </div>
     </div>
-    <div class="carreras" id="transporte">
+    <div class="carreras" id="transporte" routerLinkActive="Active">
       <div class="carrerasB">
         <img src="../../assets/ico-carreras/ico-conduciion.png" width="50" />
         <p class="smallest">Escuela de Conducción Profesional</p>
@@ -92,7 +92,7 @@
   <!-- carreras FIN -->
 
   <section id="info">
-
+    <router-outlet></router-outlet>
     <div class="subscribe"></div>
     <div class="noticiasImportantes"></div>
 
@@ -101,7 +101,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngIf="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
