@@ -1,5 +1,6 @@
+
 #bodyComp{
-  border: solid 0.5px gray;
+  /*border: solid 0.5px gray;*/
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -7,11 +8,51 @@
 }
 
 
+#rowRight {
+  margin-top: 45px;
+  width: 0;
+  height: 0;
+  border-left: 75px solid #C8580F;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subRowRight {
+  width: 0;
+  height: 0;
+  border-left: 15px solid #06219A;
+  border-top: 18px solid transparent;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  margin-left: -68px;
+}
+
+#subRowLeft {
+  width: 0;
+  height: 0;
+  border-left: 15px solid #06219A;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  position: absolute;
+  margin-left: -75px;
+}
+
+#rowLeft {
+  margin-top: 45px;
+  width: 0;
+  height: 0;
+  border-left: 75px solid #C8580F;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+}
 
 #carreras {
   width: 45%;
   height: auto;
-  
   display: flex;
   justify-content: stretch;
   align-content: center;
@@ -37,16 +78,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
   .carrerasB:hover {
     transition: ease all 1s;
     opacity: 0;
+
   }
 
 .carreras {
   width: 150px;
   height: 140px;
-  border: solid 1px gray;
+  /*border: solid 1px gray;*/
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -54,11 +97,31 @@
   transition: ease all 1s;
 }
 
-  
+.bannerParagraph {
+  background-color: rgba(255, 191, 8 ,1);
+  padding-bottom: 3px;
+  padding-top: 5px;
+  width: 45%;
+  z-index: 2;
+  box-shadow: -15px 10px 10px rgba(0,0,0,0.5);
+}
+
+#modal{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 500px;
+  top: 40%;
+  left: 50%;
+  margin-left: -50%;
+  z-index: 200;
+  border-radius: 10px;
+}
+
 #info {
   width: 40%;
   height: auto;
-  border: solid 0.5px gray;
+  /*border: solid 0.5px gray;*/
   display: flex;
   flex-direction: column;
 }
@@ -70,10 +133,25 @@
 }
 
 #titleCarreras {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
   font-family: 'Oswald', sans-serif;
   font-size: 28pt;
+  text-align: center;
+  padding: 10px;
 }
 /*carreras INICIO*/
+
+/*responsive INICIO*/
+
+@media only screen and (max-width: 500px){
+  #tSupEnfermeria {
+    background-size: 200% 150%;
+    background-position: -50px -50px;
+  }
+}
+/*responsive FIN*/
 #tSupEnfermeria {
   background-image: url('../../assets/img/enfermeria.jpg');
   background-size: 120% 100%;
@@ -209,13 +287,13 @@
     background-position: -10px -10px;
   }
 
-#transporte {
+#conduccion {
   background-image: url('../../assets/img/coduccion.jpg');
   background-size: 140% 100%;
   background-repeat: no-repeat;
 }
 
-  #transporte:hover {
+  #conduccion:hover {
     transition: ease all 1s;
     background-size: 150% 110%;
     background-position: -10px -10px;
@@ -239,6 +317,12 @@
     justify-content: stretch;
     justify-content: center;
   }
+  #titleCarreras{
+      display: flex;
+      justify-content: center;
+      margin-bottom:12px;
+  }
 }
 
 /*carreras FIN*/
+

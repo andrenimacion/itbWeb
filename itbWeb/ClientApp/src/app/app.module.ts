@@ -18,6 +18,13 @@ import { RebFisicaComponent } from './reb-fisica/reb-fisica.component';
 import { APP_ROUTING } from './app.route';
 import { EquiposBiomedicosComponent } from './equipos-biomedicos/equipos-biomedicos.component';
 import { GerentologiaComponent } from './gerentologia/gerentologia.component';
+import { CosmeatriaComponent } from './cosmeatria/cosmeatria.component';
+import { ContabilidadComponent } from './contabilidad/contabilidad.component';
+import { AdminEmpresasComponent } from './admin-empresas/admin-empresas.component';
+import { DesSoftwareComponent } from './des-software/des-software.component';
+import { PlanTransportComponent } from './plan-transport/plan-transport.component';
+import { ConduccEscComponent } from './conducc-esc/conducc-esc.component';
+import { ModalViewDataComponent } from './modal-view-data/modal-view-data.component';
 
 //SERVICIOS
 
@@ -32,7 +39,14 @@ import { GerentologiaComponent } from './gerentologia/gerentologia.component';
     PodologiaComponent,
     RebFisicaComponent,
     EquiposBiomedicosComponent,
-    GerentologiaComponent
+    GerentologiaComponent,
+    CosmeatriaComponent,
+    ContabilidadComponent,
+    AdminEmpresasComponent,
+    DesSoftwareComponent,
+    PlanTransportComponent,
+    ConduccEscComponent,
+    ModalViewDataComponent
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -44,9 +58,16 @@ import { GerentologiaComponent } from './gerentologia/gerentologia.component';
             { path: 'banner', component: BannerComponent },
             { path: 'body', component: BodyComponent },
             { path: 'tsTurismo', component: TSturismoComponent },
-          { path: 'tsEnfermeria', component: TSenfermeriaComponent },
-          { path: 'tsEquipBiomedid', component: EquiposBiomedicosComponent },
-          { path: 'tsGerontologia', component: GerentologiaComponent },
+            { path: 'tsEnfermeria', component: TSenfermeriaComponent },
+            { path: 'tsEquipBiomedid', component: EquiposBiomedicosComponent },
+            { path: 'tsGerontologia', component: GerentologiaComponent },
+            { path: 'tsCosmeatria', component: CosmeatriaComponent },
+            { path: 'tsContabilidad', component: ContabilidadComponent },
+            { path: 'tsAdminEmpresas', component: AdminEmpresasComponent },
+            { path: 'tsPlanTransport', component: PlanTransportComponent },
+            { path: 'tsConducc', component: ConduccEscComponent },
+            { path: 'ModalData', component: ModalViewDataComponent },
+            { path: 'tsDesSoft', component: DesSoftwareComponent }
     ])
   ],
   providers: [],

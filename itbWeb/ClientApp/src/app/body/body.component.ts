@@ -7,12 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
+  public title: string = "Elige una carrera";
+  public screenLitle: number = 1089;
+  public ClassModal: string
 
-
-  constructor() { }
-
-    ngOnInit() {
+  constructor( ) { }
+  public modalView: boolean;
   
+  detectScreen() {
+    if (screen.width <= this.screenLitle) {
+      this.ClassModal = "container";
+      this.modalView = true;
     }
+    else {
+      this.ClassModal = "container d-none";
+      this.modalView = false; 
+    }
+    console.log(screen.width);
+  }
 
+  ngOnInit() {
+    
+  }
 }

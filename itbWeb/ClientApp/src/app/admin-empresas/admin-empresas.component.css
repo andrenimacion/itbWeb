@@ -1,0 +1,36 @@
+#adminEmpresas {
+  height: 500px;
+  background-image: url('../../assets/img/administracionEmpresas.jpg');
+  background-repeat: no-repeat;
+  background-size: 120% 100%;
+  background-position-x: -25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+button {
+  transition: ease all 0.5s;
+  opacity: 0.7;
+  font-family: 'Oswald', sans-serif;
+}
+
+  button:hover {
+    transition: ease all 0.5s;
+    opacity: 1;
+    background-color: magenta;
+    border: solid 1px gray;
+    box-shadow: 2px 2px 8px #444444;
+    font-family: 'Oswald', sans-serif;
+  }
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 28pt;
+  background-color: rgba(10,10,10,0.5);
+  padding: 10px;
+  text-align: center;
+}
