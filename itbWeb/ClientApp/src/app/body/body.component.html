@@ -1,10 +1,13 @@
-
 <div id="titleCarreras" class="titleCarreras mt-4">
-  <div class="row" id="rowRight"><div class="row" id="subRowRight"></div></div>
-  <div class="bannerParagraph">
-    <p class="title animated bounceIn slow"><span class=" icon-heart-1 animated fadeInLeft slow "></span> {{ title | uppercase }} </p>
-  </div>
-  <div class="row" id="rowLeft"><div class="row" id="subRowLeft"></div></div>
+    <div class="row" id="rowRight">
+        <div class="row" id="subRowRight"></div>
+    </div>
+    <div class="bannerParagraph">
+        <p class="title animated bounceIn slow"><span class=" icon-heart-1 animated fadeInLeft slow "></span> {{ title | uppercase }} </p>
+    </div>
+    <div class="row" id="rowLeft">
+        <div class="row" id="subRowLeft"></div>
+    </div>
 </div>
 <!--<section id="filtro" class="filtro animated fadeIn slow p-4">
   <i class="material-icons btn btn-secondary" title="filtro de busqueda">
@@ -16,128 +19,93 @@
 
 <div class="container-fluid" id="bodyComp">
 
-  <!-- carreras INICIO -->
+    <!-- carreras INICIO -->
 
-  <section id="carreras">
-    <div class="carreras"
-         id="tSupEnfermeria"
-         (click)="detectScreen()"
-         routerLinkActive="Active">
+    <section id="carreras">
+        <div class="carreras" id="tSupEnfermeria" (click)="detectScreen()" routerLinkActive="Active">
 
-      <div class="carrerasB" [routerLink]="['tsEnfermeria']">
-        <img src="../../assets/ico-carreras/ico-enf.png" width="50" />
-        <p class="smallest mt-2">Tecnologia Superior <br /> en Enfermería</p>
-      </div>
-    </div>
-    <div class="carreras" id="tSupPodologia"
-         (click)="detectScreen()"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsPodologia']">
-        <img src="../../assets/ico-carreras/ico-pie.png" width="50" />
-        <p class="smallest mt-2">Tecnologia Superior <br /> en Podología</p>
-      </div>
-    </div>
-    <div class="carreras"
-         id="atAdultoMayor"
-         (click)="detectScreen()"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsGerontologia']">
-        <img src="../../assets/ico-carreras/ico-gerontologia.png" width="50" />
-        <p class="smallest mt-2">Tecnologia Superior <br /> en Atención Integral para<br />Adultos Mayores</p>
-      </div>
-    </div>
-    <div class="carreras"
-         id="rebFisica"
-         (click)="detectScreen()"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsRebFisica']">
-        <img src="../../assets/ico-carreras/ico-rebFisica.png" width="50" />
-        <p class="smallest mt-2">Tecnologia Superior <br /> en Rehabilitación Física</p>
-      </div>
-    </div>
-    <div class="carreras"
-         id="mantBiomed"
-         (click)="detectScreen()"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsEquiposBiomedicos']">
-        <img src="../../assets/ico-carreras/ico-mantBiomed.png" width="50" />
-        <p class="smallest">Tecnologia Superior <br /> en Mantenimiento de equipos Biomédicos</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="tricol"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsCosmeatria']">
-        <img src="../../assets/ico-carreras/ico-tricologia.png" width="50" />
-        <p class="smallest">Tecnologia Superior <br /> en Tricología y Cosmiatría</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="contabilidad"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsContabilidad']">
-        <img src="../../assets/ico-carreras/ico-contabilidad.png" width="50" />
-        <p class="smallest">Tecnologia Superior <br /> en Contabilidad</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="admEmp"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsAdminEmpresas']">
-        <img src="../../assets/ico-carreras/ico-adminisracion.png" width="50" />
-        <p class="smallest">Tecnologia Superior <br /> en Administración de Empresas</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="desarrolloSoft"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsDesSoft']">
-        <img src="../../assets/ico-carreras/ico-des.png" width="50" />
-        <p class="smallest mt-2">Tecnología <br /> en Desarrollo de Software</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="turismo"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsTurismo']">
-        <img src="../../assets/ico-carreras/ico-turismo.png" width="50" />
-        <p class="smallest mt-2">Tecnología en Turismo</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="transporte"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsPlanTransport']">
-        <img src="../../assets/ico-carreras/ico-bus.png" width="50" />
-        <p class="smallest">Tecnología Superior en Planificación y Gestión de transporte</p>
-      </div>
-    </div>
-    <div class="carreras"
-         (click)="detectScreen()"
-         id="conduccion"
-         routerLinkActive="Active">
-      <div class="carrerasB" [routerLink]="['tsConducc']">
-        <img src="../../assets/ico-carreras/ico-conduciion.png" width="50" />
-        <p class="smallest">Escuela de Conducción Profesional</p>
-      </div>
-    </div>
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsEnfermeria')" [routerLink]="['tsEnfermeria']">
+                <img src="../../assets/ico-carreras/ico-enf.png" width="50" />
+                <p class="smallest mt-2">Tecnologia Superior <br /> en Enfermería</p>
+            </div>
+        </div>
+        <div class="carreras" id="tSupPodologia" (click)="detectScreen()" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsPodologia')" [routerLink]="['tsPodologia']">
+                <img src="../../assets/ico-carreras/ico-pie.png" width="50" />
+                <p class="smallest mt-2">Tecnologia Superior <br /> en Podología</p>
+            </div>
+        </div>
+        <div class="carreras" id="atAdultoMayor" (click)="detectScreen()" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsGerontologia')" [routerLink]="['tsGerontologia']">
+                <img src="../../assets/ico-carreras/ico-gerontologia.png" width="50" />
+                <p class="smallest mt-2">Tecnologia Superior <br /> en Atención Integral para<br />Adultos Mayores</p>
+            </div>
+        </div>
+        <div class="carreras" id="rebFisica" (click)="detectScreen()" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsRebFisica')" [routerLink]="['tsRebFisica']">
+                <img src="../../assets/ico-carreras/ico-rebFisica.png" width="50" />
+                <p class="smallest mt-2">Tecnologia Superior <br /> en Rehabilitación Física</p>
+            </div>
+        </div>
+        <div class="carreras" id="mantBiomed" (click)="detectScreen()" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsEquiposBiomedicos')" [routerLink]="['tsEquiposBiomedicos']">
+                <img src="../../assets/ico-carreras/ico-mantBiomed.png" width="50" />
+                <p class="smallest">Tecnologia Superior <br /> en Mantenimiento de equipos Biomédicos</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="tricol" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsCosmeatria')" [routerLink]="['tsCosmeatria']">
+                <img src="../../assets/ico-carreras/ico-tricologia.png" width="50" />
+                <p class="smallest">Tecnologia Superior <br /> en Tricología y Cosmiatría</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="contabilidad" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsContabilidad')" [routerLink]="['tsContabilidad']">
+                <img src="../../assets/ico-carreras/ico-contabilidad.png" width="50" />
+                <p class="smallest">Tecnologia Superior <br /> en Contabilidad</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="admEmp" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsAdminEmpresas')" [routerLink]="['tsAdminEmpresas']">
+                <img src="../../assets/ico-carreras/ico-adminisracion.png" width="50" />
+                <p class="smallest">Tecnologia Superior <br /> en Administración de Empresas</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="desarrolloSoft" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsDesSoft')" [routerLink]="['tsDesSoft']">
+                <img src="../../assets/ico-carreras/ico-des.png" width="50" />
+                <p class="smallest mt-2">Tecnología <br /> en Desarrollo de Software</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="turismo" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsTurismo')" [routerLink]="['tsTurismo']">
+                <img src="../../assets/ico-carreras/ico-turismo.png" width="50" />
+                <p class="smallest mt-2">Tecnología en Turismo</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="transporte" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsPlanTransport')" [routerLink]="['tsPlanTransport']">
+                <img src="../../assets/ico-carreras/ico-bus.png" width="50" />
+                <p class="smallest">Tecnología Superior en Planificación y Gestión de transporte</p>
+            </div>
+        </div>
+        <div class="carreras" (click)="detectScreen()" id="conduccion" routerLinkActive="Active">
+            <div class="carrerasB" (mouseover)="navigateCarreras('/tsConducc')" [routerLink]="['tsConducc']">
+                <img src="../../assets/ico-carreras/ico-conduciion.png" width="50" />
+                <p class="smallest">Escuela de Conducción Profesional</p>
+            </div>
+        </div>
 
-  </section>
-  <!-- carreras FIN -->
+    </section>
+    <!-- carreras FIN -->
 
-  <section id="info">
-    <router-outlet></router-outlet>
-  </section>
+    <section id="info">
+        <router-outlet></router-outlet>
+    </section>
 
 </div>
 
 <!-- Modal -->
 <div id="modal" [class]="" *ngIf="modalView">
-  <app-modal-view-data ></app-modal-view-data>
+    <app-modal-view-data></app-modal-view-data>
 </div>

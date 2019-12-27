@@ -12,6 +12,7 @@ import { AdminEmpresasComponent } from './admin-empresas/admin-empresas.componen
 import { DesSoftwareComponent } from './des-software/des-software.component';
 import { PlanTransportComponent } from './plan-transport/plan-transport.component';
 import { ConduccEscComponent } from './conducc-esc/conducc-esc.component';
+import { InfoModalComponent } from './info-modal/info-modal.component';
 
 const APP_ROUTES: Routes = [
 
@@ -28,6 +29,7 @@ const APP_ROUTES: Routes = [
   { path: 'tsDesSoft', component: DesSoftwareComponent },
   { path: 'tsPlanTransport', component: PlanTransportComponent },
   { path: 'tsConducc', component: ConduccEscComponent },
+  { path: 'infoModal', component: InfoModalComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 
 ];

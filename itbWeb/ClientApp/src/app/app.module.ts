@@ -25,6 +25,7 @@ import { DesSoftwareComponent } from './des-software/des-software.component';
 import { PlanTransportComponent } from './plan-transport/plan-transport.component';
 import { ConduccEscComponent } from './conducc-esc/conducc-esc.component';
 import { ModalViewDataComponent } from './modal-view-data/modal-view-data.component';
+import { InfoModalComponent } from './info-modal/info-modal.component';
 
 //SERVICIOS
 
@@ -46,6 +47,7 @@ import { ModalViewDataComponent } from './modal-view-data/modal-view-data.compon
     DesSoftwareComponent,
     PlanTransportComponent,
     ConduccEscComponent,
+    InfoModalComponent,
     ModalViewDataComponent
     ],
     imports: [
@@ -67,7 +69,8 @@ import { ModalViewDataComponent } from './modal-view-data/modal-view-data.compon
             { path: 'tsPlanTransport', component: PlanTransportComponent },
             { path: 'tsConducc', component: ConduccEscComponent },
             { path: 'ModalData', component: ModalViewDataComponent },
-            { path: 'tsDesSoft', component: DesSoftwareComponent }
+            { path: 'tsDesSoft', component: DesSoftwareComponent },
+            { path: 'infoModal', component: InfoModalComponent }
     ])
   ],
   providers: [],

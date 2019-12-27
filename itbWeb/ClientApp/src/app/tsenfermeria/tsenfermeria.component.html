@@ -1,15 +1,32 @@
-
 <div id="enfermeria" [ngStyle]="{'max-height.%': 100}" class="animated fadeInLeft fast">
 
-  <p class="title">
+    <p class="title">
+        Tecnología en Enfermería
+    </p>
 
-    Tecnología en Enfermería
-
-  </p>
-
-  <button class="btn btn-primary">
-    <span class="icon-eye-4"></span> Malla Curricular
-  </button>
+    <div class="formsCarreras animated bounceInUp fast" *ngIf="sHid">
+        <form>
+            <label for="nombre">Ingrese sus Nombre:</label>
+            <input type="text" id="nombre" class="input" placeholder="Ingrese nombre y apellido">
+            <label for="celular">Ingrese un Celular:</label>
+            <input type="number" id="celular" class="input">
+            <label for="email">Ingrese un Email:</label>
+            <input type="email" id="email" class="input">
+            <button class="btn btn-warning mt-3">!Registrame!</button>
+            <button class="btn btn-darkness mt-3" (click)="abrirForm(false)">Cerrar</button>
+        </form>
+    </div>
+    <div class="herramientas">
+        <button class="btn btn-primary">
+        <span class="icon-eye-4"></span> Malla Curricular
+        </button>
+        <button class="btn btn-success" (click)="abrirForm(true)">
+        <span class="icon-address-book-o"></span> Registrame Aquí
+        </button>
+        <button class="btn btn-warning" (click)="abrirModal('/infoModal')" data-toggle="modal" data-target="#exampleModalCenter">
+        <span class="icon-search-4"></span> Informacion 
+        </button>
+    </div>
 
 
 
