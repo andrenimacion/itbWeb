@@ -26,6 +26,7 @@ import { PlanTransportComponent } from './plan-transport/plan-transport.componen
 import { ConduccEscComponent } from './conducc-esc/conducc-esc.component';
 import { ModalViewDataComponent } from './modal-view-data/modal-view-data.component';
 import { InfoModalComponent } from './info-modal/info-modal.component';
+import { BeneficiosComponent } from './beneficios/beneficios.component';
 
 //SERVICIOS
 
@@ -48,7 +49,8 @@ import { InfoModalComponent } from './info-modal/info-modal.component';
     PlanTransportComponent,
     ConduccEscComponent,
     InfoModalComponent,
-    ModalViewDataComponent
+    ModalViewDataComponent,
+    BeneficiosComponent
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -70,7 +72,8 @@ import { InfoModalComponent } from './info-modal/info-modal.component';
             { path: 'tsConducc', component: ConduccEscComponent },
             { path: 'ModalData', component: ModalViewDataComponent },
             { path: 'tsDesSoft', component: DesSoftwareComponent },
-            { path: 'infoModal', component: InfoModalComponent }
+            { path: 'infoModal', component: InfoModalComponent },
+            { path: 'beneficios', component: BeneficiosComponent }
     ])
   ],
   providers: [],

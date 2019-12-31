@@ -7,11 +7,11 @@ button {
 }
 
 .formsCarreras {
-    width: 330px;
+    width: 80%;
     height: auto;
     background-color: rgba(245, 245, 245, 0.89);
     border-radius: 5px;
-    box-shadow: 0px 0p 7px rgba(10, 10, 10, 0.5);
+    box-shadow: 0px 0px 7px rgba(10, 10, 10, 0.5);
     padding: 12px;
     display: flex;
     flex-direction: column;
@@ -28,10 +28,11 @@ input {
 }
 
 #enfermeria {
-    height: 500px;
+    height: 510px;
     background-image: url('../../assets/img/enfermeria.jpg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 1300px auto;
+    background-position: -100px -100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,18 +41,27 @@ input {
 }
 
 button {
-    transition: ease all 0.5s;
-    opacity: 0.7;
-    font-family: 'Oswald', sans-serif;
+  transition: ease all 0.3s;
+  background-color: #232323;
+  color: white;
+  opacity: 0.9;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 0px 0px 0px 0px;
+  height: 40px;
+  width: 200px;
+  padding-bottom:10px;
+  padding-top:0;
 }
 
 button:hover {
     transition: ease all 0.5s;
     opacity: 1;
-    background-color: magenta;
     border: solid 1px gray;
     box-shadow: 2px 2px 8px #444444;
     font-family: 'Oswald', sans-serif;
+    color: white;
+    height: 50px;
+    border-bottom: solid 5px yellow;
 }
 
 .title {
